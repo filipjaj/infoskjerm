@@ -7,12 +7,12 @@ import { doc, setDoc } from "firebase/firestore";
 import { db } from '../../lib/firebase';
 import PlaceForm from '../../components/PlaceForm';
 
-export default function Home() {
+export default function Update() {
  
   return (
     <div className={styles.container}>
 
-     <h1>Infoskjerm</h1>
+      <PlaceForm />
 
       </div>
   )
