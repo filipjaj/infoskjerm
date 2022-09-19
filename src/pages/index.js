@@ -1,11 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
-import { useCollection } from 'react-firebase-hooks/firestore';
+
 import {useQuery} from '@tanstack/react-query'
-import { doc, setDoc } from "firebase/firestore"; 
-import { db } from '../../lib/firebase';
-import PlaceForm from '../../components/PlaceForm';
+
 import axios from 'axios';
 const getWeather = async (lat, lon) => {
   const data = await axios.get(`https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=${lat}&lon=${lon}`);
