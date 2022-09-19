@@ -1,0 +1,20 @@
+@use "./color";
+
+.container {
+  padding: 100px;
+  .weatherCard {
+    max-width: 400px;
+    max-height: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: color.$lightBlue;
+    color: color.$black;
+    p {
+      font-size: 3rem;
+    }
+  }
+}
