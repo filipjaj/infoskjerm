@@ -1,0 +1,41 @@
+@use "@/styles/color";
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+
+  .dibsedBy {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .score {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card {
+    p {
+      margin: 0;
+    }
+    background-color: white;
+    display: flex;
+    padding: 5px 15px;
+    gap: 2px;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: color.$button;
+    color: color.$buttonText;
+  }
+}

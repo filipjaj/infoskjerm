@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { doc, setDoc } from "firebase/firestore"; 
+
 import { db } from '../../lib/firebase';
 import styles from './placeForm.module.scss';
 const PlaceForm = () => {
