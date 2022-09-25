@@ -8,7 +8,7 @@ import styles from './calendar.module.scss'
 
 const Calendar = () => {
     const { user } = useContext(UserContext)
-    const collectionRef = collection(db, 'users', user.uid, "calendar");
+    const collectionRef = collection(db, 'calendar');
     const [values, loading, error, snapshot] = useCollectionDataOnce(collectionRef);
     const monday = useInput()
     const tuesday = useInput()
