@@ -1,7 +1,7 @@
 @use "./color";
 
 .container {
-  padding: 10px;
+  padding: 10%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -16,8 +16,8 @@
   .disclaimer {
     color: color.$buttonText;
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    bottom: 20px;
+    right: 20px;
   }
   .weatherCard {
     max-width: 400px;
